@@ -9,13 +9,15 @@
  */
 
 import React from 'react';
-import {SafeAreaView, StyleSheet, Text} from 'react-native';
+import {SafeAreaView, StyleSheet, StatusBar} from 'react-native';
+import {colors} from './assets/colors';
+import {MainScreen} from './components/screens/main-screen';
 
 export const App = () => {
   return (
     <SafeAreaView style={styles.container}>
-      {/* <StatusBar barStyle={isDarkMode ? 'light-content' : 'dark-content'} /> */}
-      <Text>antonioR</Text>
+      <StatusBar barStyle={'light-content'} />
+      <MainScreen />
     </SafeAreaView>
   );
 };
@@ -23,7 +25,6 @@ export const App = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
+    backgroundColor: colors.darkerGray,
   },
 });
