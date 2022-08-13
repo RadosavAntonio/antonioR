@@ -1,0 +1,30 @@
+{
+  "compilerOptions": {
+    "target": "esnext",
+    "module": "commonjs",
+    "lib": ["es2020"],
+    "allowJs": true,
+    "jsx": "react-native",
+    "noEmit": true,
+    "incremental": true,
+    "isolatedModules": true,
+    "strict": false,
+    "noImplicitAny": false,
+    "moduleResolution": "node",
+    "allowSyntheticDefaultImports": true,
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "types": [],
+    "resolveJsonModule": true
+  },
+  "include": ["src/*", "tests/*"],
+  "exclude": [
+    "node_modules",
+    "./node_modules",
+    "./node_modules/*",
+    "./node_modules/@types/node/index.d.ts",
+    "babel.config.js",
+    "metro.config.js",
+    "jest.config.js"
+  ]
+}
