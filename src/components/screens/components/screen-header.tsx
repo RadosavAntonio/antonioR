@@ -41,11 +41,6 @@ export const ScreenHeader = () => {
         <TouchableHighlight onPress={() => navigation.navigate('Test')}>
           <ProText color="white">test</ProText>
         </TouchableHighlight>
-        {/* <Button
-          title="TEST"
-          onPress={() => navigation.navigate('Test')}
-          style={{height: 30, width: 30}}
-        /> */}
       </Row>
     </View>
   );
