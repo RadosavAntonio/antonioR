@@ -1,5 +1,12 @@
+import {useNavigation} from '@react-navigation/native';
 import React from 'react';
-import {View, StyleSheet} from 'react-native';
+import {
+  View,
+  StyleSheet,
+  TouchableHighlight,
+  Alert,
+  Button,
+} from 'react-native';
 import {colors} from '../../../assets/colors';
 import {getAdjustedWidth} from '../../../helperFunctions/adaptive-width-and-height';
 import {createShadow} from '../../../helperFunctions/create-shadow';
@@ -16,6 +23,8 @@ export const ScreenHeader = () => {
     elevation: 1,
   });
 
+  const navigation = useNavigation();
+
   return (
     <View style={styles.container}>
       <Row style={styles.contentContainer}>
@@ -29,7 +38,14 @@ export const ScreenHeader = () => {
           </ProText>
           <ProText color="white">software engineer</ProText>
         </View>
-        <ProText color="white">test</ProText>
+        <TouchableHighlight onPress={() => navigation.navigate('Test')}>
+          <ProText color="white">test</ProText>
+        </TouchableHighlight>
+        {/* <Button
+          title="TEST"
+          onPress={() => navigation.navigate('Test')}
+          style={{height: 30, width: 30}}
+        /> */}
       </Row>
     </View>
   );

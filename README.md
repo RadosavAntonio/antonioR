@@ -3,7 +3,7 @@ This project want to show how amazing the React Native can be. I start this amaz
 
 PREPARED TO ME AMAZED?!
 
-Lets's go!
+Let's go!
 
 ## Features
 • 001 - create a header
