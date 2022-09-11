@@ -1,17 +1,17 @@
-import {useNavigation} from '@react-navigation/native';
-import React from 'react';
+import { useNavigation } from '@react-navigation/native'
+import React from 'react'
 import {
   View,
   StyleSheet,
   TouchableHighlight,
   Alert,
   Button,
-} from 'react-native';
-import {colors} from '../../../assets/colors';
-import {getAdjustedWidth} from '../../../helperFunctions/adaptive-width-and-height';
-import {createShadow} from '../../../helperFunctions/create-shadow';
-import {ProText} from '../../updatedTags/pro-text';
-import {Row} from '../../updatedTags/row';
+} from 'react-native'
+import { colors } from '../../../assets/colors'
+import { getAdjustedWidth } from '../../../helperFunctions/adaptive-width-and-height'
+import { createShadow } from '../../../helperFunctions/create-shadow'
+import { ProText } from '../../updatedTags/pro-text'
+import { Row } from '../../updatedTags/row'
 
 export const ScreenHeader = () => {
   const shadow = createShadow({
@@ -21,9 +21,9 @@ export const ScreenHeader = () => {
     radius: 2,
     color: 'gold',
     elevation: 1,
-  });
+  })
 
-  const navigation = useNavigation();
+  const navigation = useNavigation()
 
   return (
     <View style={styles.container}>
@@ -33,7 +33,8 @@ export const ScreenHeader = () => {
             color="gold"
             fontSize={14}
             fontWeight={'bold'}
-            additionalStyle={shadow}>
+            additionalStyle={shadow}
+          >
             Antonio Radosav
           </ProText>
           <ProText color="white">software engineer</ProText>
@@ -43,8 +44,8 @@ export const ScreenHeader = () => {
         </TouchableHighlight>
       </Row>
     </View>
-  );
-};
+  )
+}
 
 const styles = StyleSheet.create({
   container: {
@@ -65,4 +66,4 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
   },
-});
+})
